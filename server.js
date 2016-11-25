@@ -86,7 +86,7 @@ export class SubscriptionServer {
 
     if (this.connections[connectionId].subscriptionIds[subscriptionId]) {
       this.subscriptionManager.unsubscribe(this.connections[connectionId].subscriptionIds[subscriptionId]);
-      delete this.cnnections[connectionId].subscriptionIds[subscriptionId];
+      delete this.connections[connectionId].subscriptionIds[subscriptionId];
     }
 
     const subscription = this.connections[connectionId].subscription;
